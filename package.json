@@ -1,0 +1,35 @@
+{
+  "name": "simply-art",
+  "version": "1.0.0",
+  "description": "An art website where people can upload their art and sell it. Inspired by my wife's talents.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js", 
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fuzz-Volp/Simply-Art.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fuzz-Volp/Simply-Art/issues"
+  },
+  "homepage": "https://github.com/Fuzz-Volp/Simply-Art#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-react-views": "^0.11.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.8.4",
+    "morgan": "^1.10.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
