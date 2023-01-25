@@ -3,12 +3,8 @@ require("dotenv").config();
 /**
  * Requirements
  */
-const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
-
-//include the method-override package place this where you instructor places it
-const methodOverride = require("method-override");
 
 /**
  * Configuration
@@ -16,46 +12,37 @@ const methodOverride = require("method-override");
 const PORT = 3000;
 
 /**
- * Controller requires go here ⬇️
+ *  Bringin in Controllers
  */
 
-//--------------------------------
-
-// Mongoose connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-mongoose.connection.once("open", () => {
+//connect to database
+const db = require("./db");
+db.once("open", () => {
   console.log("connected to mongo");
 });
 
 /**
  * Middleware
  */
-app.use(express.static("public")); //tells express to try to match requests with files in the directory called 'public'
+// const setupMiddleware = require("./middleware/setupMiddleware");
 
-// Method override will allow us to use put & delete methods
-app.use(methodOverride("_method"));
+// setupMiddleware(app);
 
-// Allow express to use urlencoded
-app.use(express.urlencoded({ extended: true }));
-// Allow express to recieve the body as json in requests
-app.use(express.json());
 /**
  * View engine
  */
 app.set("view engine", "jsx");
-app.engine("jsx", require("jsx-view-engine").createEngine());
+app.engine("jsx", require("express-react-views").createEngine());
 
 /**
- * Controller middlewares go here ⬇️
+ *  Using Controllers
  */
 
-// Index route
+
+
+// We are just going to redirect to /fruits if the user goes to our base route
 app.get("/", (req, res) => {
-  res.render("Index");
+  res.redirect("/arts/");
 });
 
 // Listen on the port
