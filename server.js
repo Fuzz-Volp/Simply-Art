@@ -14,6 +14,7 @@ const PORT = 3000;
 /**
  *  Bringin in Controllers
  */
+const artController = require("./controllers/art/artController");
 
 //connect to database
 const db = require("./db");
@@ -24,9 +25,9 @@ db.once("open", () => {
 /**
  * Middleware
  */
-// const setupMiddleware = require("./middleware/setupMiddleware");
+const setupMiddleware = require("./middleware/setupMiddleware");
 
-// setupMiddleware(app);
+setupMiddleware(app);
 
 /**
  * View engine
@@ -37,10 +38,10 @@ app.engine("jsx", require("express-react-views").createEngine());
 /**
  *  Using Controllers
  */
+app.use("/art", artController);
 
 
-
-// We are just going to redirect to /fruits if the user goes to our base route
+// We are just going to redirect to /arts if the user goes to our base route
 app.get("/", (req, res) => {
   res.redirect("/arts/");
 });

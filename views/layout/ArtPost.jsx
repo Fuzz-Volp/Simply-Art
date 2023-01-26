@@ -7,7 +7,7 @@ class ArtPost extends React.Component {
 
         return(
             <div>
-                <a href={`/art/${_id}`}
+                <a href={`/arts/${_id}`}
                 >
                     <h5>
                        {name} 
