@@ -12,9 +12,10 @@ const app = express();
 const PORT = 3000;
 
 /**
- *  Bringin in Controllers
+ *  Getting Controllers
  */
 const artController = require("./controllers/art/artController");
+const userController = require("./controllers/user/userController");
 
 //connect to database
 const db = require("./db");
@@ -33,17 +34,18 @@ setupMiddleware(app);
  * View engine
  */
 app.set("view engine", "jsx");
-app.engine("jsx", require("express-react-views").createEngine());
+app.engine("jsx", require("jsx-view-engine").createEngine());
 
 /**
- *  Using Controllers
+ * Using Controllers
  */
-app.use("/art", artController);
 
+app.use("/arts", artController);
+app.use("/user", userController);
 
 // We are just going to redirect to /arts if the user goes to our base route
 app.get("/", (req, res) => {
-  res.redirect("/arts/");
+  res.redirect("/arts/  ");
 });
 
 // Listen on the port

@@ -1,62 +1,37 @@
-const React = require('react');
-const ArtPost = require('../layout/ArtPost');
-const Layout = require('../layout/Default');
-
-
+const React = require("react");
+const Layout = require("../layout/Default");
+const Nav = require("../layout/Nav");
 class Index extends React.Component {
-    render() {
-        const { arts } = this.props;
+  render() {
+    // method 2: destructure the props
+    const { arts } = this.props;
 
-        return(
-            <Layout title='Home Page'>
-                <nav className=''>
-                    <h3>Simply Art</h3>
-                    <a href="#">home</a>
-                    <a href="#">about</a>
-                    <a href="#">artists</a>
-                    <a href="#">shop</a>
-                    <a href="#">contact</a>
-                    <a href="#">cart</a>
-                    <a href="#">Login</a>
-                </nav>
-                
-                <header>
-                    <h1>Welcome to Simply Art</h1>
-                    <div>
-                    <img src="" alt="" />
-                    </div>
-                </header>
+    return (
+      <Layout>
+        <Nav></Nav>
+        <nav>
+          <a href="/arts/new">Create a New art</a>
+          <a href="/user/logout">
+            <button className="logoutBtn">Logout</button>
+          </a>
+        </nav>
 
-                <main>
-                   {arts.map((art, i) => {
-                    return <ArtPost key={i} art={art} />;
-                   })}
-                </main>
-
-                <footer>
-                    <div>Contact us</div>
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="number" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="text" />
-                        <input type="button" value="" href="" />
-                    </div>
-                </footer>
-            </Layout>
-    
-        )
-
-    }
+        <ul>
+          {arts.map((art, i) => {
+            return (
+              <li key={i}>
+                The <a href={`/arts/${art.id}`}> {art.name} </a> is{" "}
+                {art.description}
+                {" - "}
+                {art.price}
+                {art.image}
+              </li>
+            );
+          })}
+        </ul>
+      </Layout>
+    );
+  }
 }
 
 module.exports = Index;
