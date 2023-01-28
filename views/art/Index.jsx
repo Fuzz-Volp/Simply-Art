@@ -1,4 +1,5 @@
 const React = require("react");
+const ArtPost = require("../layout/ArtPost");
 const Layout = require("../layout/Default");
 const Nav = require("../layout/Nav");
 class Index extends React.Component {
@@ -15,20 +16,9 @@ class Index extends React.Component {
             <button className="logoutBtn">Logout</button>
           </a>
         </nav>
-
-        <ul>
           {arts.map((art, i) => {
-            return (
-              <li key={i}>
-                The <a href={`/arts/${art.id}`}> {art.name} </a> is{" "}
-                {art.description}
-                {" - "}
-                {art.price}
-                {art.image}
-              </li>
-            );
+            return <ArtPost key={i} art={art} />;
           })}
-        </ul>
       </Layout>
     );
   }

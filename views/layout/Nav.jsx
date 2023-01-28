@@ -3,8 +3,8 @@ const React = require("react");
 class Nav extends React.Component {
     render() {
         return(
-            <nav className='flex flex-row justify-end'>
-                <h3 className="mx-">Simply Art</h3> 
+            <nav className='flex'>
+                <h3 className="">Simply Art</h3> 
                 <div className="">
                     <a href="/arts" className="px-2">home</a>
                     <a href="#" className="px-2">about</a>
