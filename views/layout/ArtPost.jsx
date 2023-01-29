@@ -6,9 +6,14 @@ class ArtPost extends React.Component {
         const { _id, name, description, price, image } = art
 
         return(
-            <div>
+
+            <div className='bg-gray-300 rounded-md mx-12'>
+                
                 <a href={`/arts/${_id}`}
                 >
+                    <p>
+                        {image}
+                    </p>
                     <h5>
                        {name} 
                     </h5>
@@ -17,9 +22,6 @@ class ArtPost extends React.Component {
                     </p>
                     <p>
                         {price}
-                    </p>
-                    <p>
-                        {image}
                     </p>
                 </a>
             </div>

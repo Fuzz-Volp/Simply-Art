@@ -56,7 +56,15 @@ router.post("/", dataController.create, viewController.redirectHome);
 
 // Edit
 router.get("/:id/edit", dataController.show, viewController.edit);
-// Show - Route
+
+// Show 
 router.get("/:id", dataController.show, viewController.show);
+
+
+// Pages
+
+router.get("/arts/about", (req, res) => {
+  res.render("pages/About")
+})
 
 module.exports = router;

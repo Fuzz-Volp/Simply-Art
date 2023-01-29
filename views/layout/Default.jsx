@@ -10,12 +10,12 @@ class Layout extends React.Component {
                     <title>{this.props.title}</title>
                     <script src="https://cdn.tailwindcss.com"></script>
                 </head>
-                <body>
-                    <Background>
-                    <h1>{this.props.title}</h1>
-                    {this.props.children}
-                    </Background>
-                </body>
+                <Background>
+                    <main className='flex flex-col justify-center items-center w-11/12 h-11/12 drop-shadow-md bg-gray-100'>
+                        <h1>{this.props.title}</h1>
+                        {this.props.children}
+                    </main>
+                </Background>
             </html>
         )
     }
