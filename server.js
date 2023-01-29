@@ -48,6 +48,12 @@ app.get("/", (req, res) => {
   res.redirect("/arts/  ");
 });
 
+
+// Pages
+app.get("/about", (req, res) => {
+  res.render("pages/About")
+})
+
 // Listen on the port
 app.listen(PORT, () => {
   console.log(`listening on port:${PORT} http://localhost:${PORT}/`);
