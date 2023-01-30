@@ -15,23 +15,20 @@ class Edit extends React.Component {
         <Nav></Nav>
 
         <form action={`/arts/${_id}?_method=PUT`} method="POST">
-          Name: <input type="text" name="name" defaultValue={name} />
+          <input type="text" name="name" placeholder="name" defaultValue={name} />
           <br />
-          Description: <input type="text" name="description" defaultValue={description} />
+
+          <input type="text" name="description" placeholder="description" defaultValue={description} className="h-24" />
           <br />
-          Price: <input type="text" name="price" defaultValue={price} />
+          <input type="text" name="price" placeholder="price" defaultValue={price}  />
           <br />
-          Artwork:
-          <input type="image" src="" alt="" />
+          <input type="url" name="image" value="" placeholder="artwork" defaultValue={image}/>
           <br />
+
           <Button>
             <input type="submit" value="Submit Changes" className="cursor-pointer"/>
           </Button>
-          <Button>
-          <form action={`/arts/${art._id}?_method=DELETE`} method="POST">
-            <input type="submit" value="DELETE" className="cursor-pointer"/>
-          </form>
-          </Button>
+          
         </form>
 
         <Spacer></Spacer>

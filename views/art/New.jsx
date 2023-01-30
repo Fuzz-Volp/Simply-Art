@@ -14,14 +14,14 @@ class New extends React.Component {
         <h1>New art page</h1>
         {/* NOTE: action will be the route, method will be the HTTP verb */}
         <form action="/arts" method="POST">
-          Name: <input type="text" name="name"/>
+          <input type="text" name="name" placeholder="name"/>
           <br />
-          Description: <input type="text" name="description"/>
           <br />
-          Price: <input type="text" name="price"/>
+          <input type="text" name="description" placeholder="description"/>
           <br />
-          Artwork Upload <input type="image" src="" alt="" />
+          <input type="text" name="price" placeholder="price"/>
           <br />
+          <input type="url" name="image" value="" placeholder="artwork"/>
 
           <Button>
             <input type="submit" value="Submit" className="cursor-pointer" />
