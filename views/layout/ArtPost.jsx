@@ -3,26 +3,21 @@ const React = require('react');
 class ArtPost extends React.Component {
     render() {
         const { art } = this.props;
-        const { _id, name, description, price, image } = art
+        const { _id, price, image, name } = art
 
         return(
 
-            <div className='bg-gray-300 rounded-md mx-12'>
+            <div className='flex justify-center bg-gray-100 rounded-md drop-shadow-md mx-12'>
                 
-                <a href={`/arts/${_id}`}
-                >
-                    <p>
-                        {image}
+                <a href={`/arts/${_id}`}>
+                   <div className='flex flex-col items-center h-52 w-52'>
+                        <img src={image} alt={name}  className="rounded-md h-44 w-44"/>
+                    
+                        <p className='mt-2'>
+                            {price}
                     </p>
-                    <h5>
-                       {name} 
-                    </h5>
-                    <p>
-                        {description}
-                    </p>
-                    <p>
-                        {price}
-                    </p>
+
+                   </div>
                 </a>
             </div>
         );

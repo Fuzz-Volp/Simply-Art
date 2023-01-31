@@ -1,6 +1,6 @@
 const React = require('react');
 const Contact = require('../layout/Contact');
-const Layout = require('../layout/Default');
+const Layout = require('../layout/Layout');
 const Footer = require('../layout/Footer');
 const Nav = require('../layout/Nav');
 

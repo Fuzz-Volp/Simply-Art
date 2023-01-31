@@ -16,6 +16,17 @@ router.use((req, res, next) => {
   }
 });
 
+// Pages
+
+router.get("/arts/about", (req, res) => {
+  res.render("pages/About")
+});
+
+router.get("/arts/gallery", (req, res) => {
+  res.render("pages/Gallery")
+});
+
+
 /**
  * Art - Api routes
  */
@@ -61,10 +72,6 @@ router.get("/:id/edit", dataController.show, viewController.edit);
 router.get("/:id", dataController.show, viewController.show);
 
 
-// Pages
 
-router.get("/arts/about", (req, res) => {
-  res.render("pages/About")
-})
 
 module.exports = router;

@@ -11,7 +11,7 @@ class Nav extends React.Component {
                     <a href="/arts" className="px-2">home</a>
                     <a href="/arts/about" className="px-2">about</a>
                     <a href="/arts/new" className="px-2">create</a>
-                    <a href="/arts/shop" className="px-2">shop</a>
+                    <a href="/arts/gallery" className="px-2">gallery</a>
                     <a href="#" className="px-2">cart</a>
                     <a href="/user/login" className="pl-10">Login/</a>
                     <a href="/user/logout" className="">Logout</a>

@@ -12,8 +12,8 @@ class Quote extends React.Component {
                     <h2 className='text-3xl '>
                     “Great things are not done by impulse, but by a series of small things brought together.”
                     </h2>
-                    <p className='my-4'>
-                        Vincent Van Gogh
+                    <p className='my-4 text-xl'>
+                       - Vincent Van Gogh
                     </p>
                 </div>
             </main>

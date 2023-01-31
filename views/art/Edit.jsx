@@ -1,6 +1,6 @@
 const React = require("react");
 const Button = require("../layout/Button");
-const Layout = require("../layout/Default");
+const Layout = require("../layout/Layout");
 const Footer = require("../layout/Footer");
 const Nav = require("../layout/Nav");
 const Spacer = require("../layout/Spacer");
@@ -8,32 +8,34 @@ const Spacer = require("../layout/Spacer");
 class Edit extends React.Component {
   render() {
     const { art } = this.props;
-    const { _id, image, name, description, price } = art;
+    const { _id, name, description, price, image } = art;
 
     return (
-      <Layout title={`${name} Edit Page`}>
-        <Nav></Nav>
+      <Layout title={`Edit ${name}`}>
+        <Nav/>
+        <div className="">
+          <form action={`/arts/${_id}?_method=PUT`} method="POST" className="w-1/2 h-1/2 rounded-md">
+            <input type="text" name="name" placeholder="name" defaultValue={name} className="my-2 bg-transparent border-b-4 focus:outline-none "/>
+            <br />
 
-        <form action={`/arts/${_id}?_method=PUT`} method="POST">
-          <input type="text" name="name" placeholder="name" defaultValue={name} />
-          <br />
+            <input type="text" name="description" placeholder="description" defaultValue={description} className="my-2 h-24 w- place-content-start bg-transparent border-b-4 focus:outline-none"/>
+            <br />
+            <input type="text" name="price" placeholder="price" defaultValue={price}  className="my-2 bg-transparent border-b-4 focus:outline-none"/>
+            <br />
+            <input type="text" name="image" placeholder="artwork" defaultValue={image} className="my-2 bg-transparent border-b-4 focus:outline-none w-48"/>
+            <br />
 
-          <input type="text" name="description" placeholder="description" defaultValue={description} className="h-24" />
-          <br />
-          <input type="text" name="price" placeholder="price" defaultValue={price}  />
-          <br />
-          <input type="url" name="image" value="" placeholder="artwork" defaultValue={image}/>
-          <br />
-
-          <Button>
-            <input type="submit" value="Submit Changes" className="cursor-pointer"/>
-          </Button>
+            <Button>
+              <input type="submit" value="Submit Changes" className="cursor-pointer"/>
+            </Button>
+            
+          </form>
+        </div>
           
-        </form>
 
-        <Spacer></Spacer>
+        <Spacer/>
 
-        <Footer></Footer>
+        <Footer/>
       </Layout>
     );
   }

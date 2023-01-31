@@ -9,6 +9,7 @@ class Layout extends React.Component {
                 <head>
                     <title>{this.props.title}</title>
                     <script src="https://cdn.tailwindcss.com"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
                 </head>
                 <Background>
                     <main className='flex flex-col justify-center items-center w-11/12 h-11/12 drop-shadow-md bg-gray-100'>
