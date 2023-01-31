@@ -5,6 +5,7 @@ const router = express.Router();
 const dataController = require("./dataController");
 const viewController = require("./viewController");
 const apiController = require("./apiController");
+const Art = require("../../models/art");
 
 router.use((req, res, next) => {
   console.log("session", req.session);
@@ -18,12 +19,16 @@ router.use((req, res, next) => {
 
 // Pages
 
-router.get("/arts/about", (req, res) => {
+router.get("/about", (req, res) => {
   res.render("pages/About")
 });
 
-router.get("/arts/gallery", (req, res) => {
-  res.render("pages/Gallery")
+router.get("/gallery", (req, res) => {
+  Art.find({}, (err, allArts) => {
+    res.render("pages/Gallery", {
+      arts: allArts,
+    });
+  });
 });
 
 

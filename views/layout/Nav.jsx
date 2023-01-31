@@ -7,7 +7,7 @@ class Nav extends React.Component {
                 <div className="flex justify-start w-1/2 ml-36">
                     <h3 className="text-3xl">Simply Art</h3> 
                 </div>
-                <div className="flex justify-end w-1/2 mr-12 text-xl">
+                <div className="flex justify-end w-1/2 mr-12 text-2xl">
                     <a href="/arts" className="px-2">home</a>
                     <a href="/arts/about" className="px-2">about</a>
                     <a href="/arts/new" className="px-2">create</a>

@@ -34,9 +34,9 @@ class Index extends React.Component {
           </div>
         </div>
 
-        <Quote/>
-
         <AboutUs/>
+
+        <Quote/>
 
         <Contact/>
 

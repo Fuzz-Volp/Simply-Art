@@ -5,7 +5,7 @@ class AboutUs extends React.Component {
     render() {
 
         return (
-            <main className="bg-gray-200 mb-36 drop-shadow-md w-full">
+            <main className="bg-gray-200 mt-36 drop-shadow-md w-full">
                 <div className="flex justify-center m-12 relative drop-shadow-md ">
                     <img src="https://i.imgur.com/tE6w5a9.jpg" alt="" className="z-0 object-fill w-5/6 h-96"/>
                     <h1 className="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
