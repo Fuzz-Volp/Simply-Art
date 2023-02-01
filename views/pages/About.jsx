@@ -3,16 +3,18 @@ const Contact = require('../layout/Contact');
 const Layout = require('../layout/Layout');
 const Footer = require('../layout/Footer');
 const Nav = require('../layout/Nav');
+const Spacer = require('../layout/Spacer');
 
 class About extends React.Component {
     render() {
 
         return(
             <Layout>
-                <Nav></Nav>
+                <Nav/>
                 <main>some text</main>
-                <Contact></Contact>
-                <Footer></Footer>
+                <Spacer/>
+                <Contact/>
+                <Footer/>
             </Layout>
         )
     }
