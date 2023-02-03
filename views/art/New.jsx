@@ -8,23 +8,25 @@ const Spacer = require("../layout/Spacer");
 class New extends React.Component {
   render() {
     return (
-      <Layout>
+      <Layout title="Add" className="hidden">
         <Nav/>
 
-        <h1>New art page</h1>
+        <h1 className="text-5xl mb-20">
+          Add your work
+        </h1>
         {/* NOTE: action will be the route, method will be the HTTP verb */}
-        <form action="/arts" method="POST">
-          <input type="text" name="name" placeholder="name"/>
+        <form action="/arts" method="POST" className="flex flex-col justify-center">
+          <input type="text" name="name" placeholder="name" className=""/>
           <br />
+          <input type="text" name="description" placeholder="description" className=""/>
           <br />
-          <input type="text" name="description" placeholder="description"/>
+          <input type="text" name="price" placeholder="price" className=""/>
           <br />
-          <input type="text" name="price" placeholder="price"/>
+          <input type="text" name="image" placeholder="artwork" className="mb-2"/>
           <br />
-          <input type="text" name="image" placeholder="artwork"/>
 
-          <Button>
-            <input type="submit" value="Submit" className="cursor-pointer" />
+          <Button >
+            <input type="submit" value="Submit" className="cursor-pointer " />
           </Button>
         </form>
 

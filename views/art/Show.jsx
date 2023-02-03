@@ -16,10 +16,10 @@ class Show extends React.Component {
     // const {art} = this.props
 
     return (
-      <Layout>
+      <Layout title={`${name}`} className="invisible">
         <Nav/>
 
-        <div className="">
+        <div>
           
           <h1 className="text-5xl mb-10 flex justify-center">
             {name}

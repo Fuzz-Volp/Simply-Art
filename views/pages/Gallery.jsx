@@ -2,20 +2,21 @@ const React = require("react");
 const Footer = require("../layout/Footer");
 const Layout = require("../layout/Layout");
 const Nav = require("../layout/Nav");
-const ArtPost = require("../layout/ArtPost");
+const GalleryPost = require("./GalleryPost");
+
 
 class Gallery extends React.Component {
     render() {
         const { arts } = this.props
 
         return (
-           <Layout>
+           <Layout title="gallery">
                 <Nav/>
-                <div className="flex flex-row">
+                <div className="flex flex-row grid grid-cols-3">
                     
 
                         {arts.map((art, i) => {
-                            return <ArtPost key={i} art={art} />;
+                            return <GalleryPost key={i} art={art} />;
                         })}
                    
                   

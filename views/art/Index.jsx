@@ -14,14 +14,14 @@ class Index extends React.Component {
     const { arts } = this.props;
 
     return (
-      <Layout>
+      <Layout title="Simply Art" >
         <Nav/>
         
         <Welcome/>
 
-        <div className="flex flex-col">
-          <div className="flex flex-row my-10 px-10 bg-gray-100 w-11/12 h-96 mt-32">
-            <div className="flex items-center overflow-x-auto overscroll-x-contain snap-center">
+        <div className="flex flex-col justify-center w-full">
+          <div className="flex flex-row ml-20 pl-28 w-11/12 h-96 mt-32 my-10">
+            <div className="flex items-center overflow-x-scroll overscroll-contain">
               {arts.map((art, i) => {
                 return <ArtPost key={i} art={art} />;
               })}

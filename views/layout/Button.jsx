@@ -5,7 +5,7 @@ class Button extends React.Component {
         const { children } = this.props;
 
         return(
-           <button className="bg-gray-300 rounded w-36 m-2">
+           <button className="bg-gray-400 hover:bg-gray-500 text-white rounded w-36 my-4 py-2 mx-auto">
                 {children}
            </button>
         )

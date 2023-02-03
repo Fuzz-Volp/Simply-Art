@@ -8,13 +8,13 @@ class Nav extends React.Component {
                     <h3 className="text-3xl">Simply Art</h3> 
                 </div>
                 <div className="flex justify-end w-1/2 mr-12 text-2xl">
-                    <a href="/arts" className="px-2">home</a>
-                    <a href="/arts/about" className="px-2">about</a>
-                    <a href="/arts/new" className="px-2">create</a>
-                    <a href="/arts/gallery" className="px-2">gallery</a>
-                    <a href="#" className="px-2">cart</a>
-                    <a href="/user/login" className="pl-10">Login/</a>
-                    <a href="/user/logout" className="">Logout</a>
+                    <a href="/arts" className="px-2 border-b-4">home</a>
+                    <a href="/arts/about" className="px-2 border-b-4">about</a>
+                    <a href="/arts/new" className="px-2 border-b-4">post</a>
+                    <a href="/arts/gallery" className="px-2 border-b-4">gallery</a>
+                    <a href="#" className="px-2 border-b-4">cart</a>
+                    <a href="/user/login" className="pl-10 border-b-4">Login/</a>
+                    <a href="/user/logout" className="border-b-4">Logout</a>
                 </div>
             </nav>
         )
