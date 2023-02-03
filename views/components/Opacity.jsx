@@ -1,5 +1,5 @@
 const React = require('react');
-const Background = require('./Background');
+const Background = require('../layout/Background');
 
 // Higher Order Component (Takes in Children)
 class Opacity extends React.Component {

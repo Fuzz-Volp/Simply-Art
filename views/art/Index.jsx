@@ -1,13 +1,13 @@
 const React = require("react");
-const AboutUs = require("../layout/AboutUs");
+const AboutUs = require("../components/AboutUs");
 const ArtPost = require("../layout/ArtPost");
 const Contact = require("../layout/Contact");
 const Layout = require("../layout/Layout");
 const Footer = require("../layout/Footer");
 const Nav = require("../layout/Nav");
-const Quote = require("../layout/Quote");
-const Welcome = require("../layout/Welcome");
-const Button = require("../layout/Button");
+const Quote = require("../components/Quote");
+const Welcome = require("../components/Welcome");
+const Button = require("../components/Button");
 class Index extends React.Component {
   render() {
     // method 2: destructure the props

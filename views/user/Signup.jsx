@@ -2,9 +2,9 @@ const React = require("react");
 const Layout = require("../layout/Layout");
 const Footer = require("../layout/Footer");
 const Nav = require("../layout/Nav");
-const Spacer = require("../layout/Spacer");
-const Button = require("../layout/Button");
-const Opacity = require("../layout/Opacity");
+const Spacer = require("../components/Spacer");
+const Button = require("../components/Button");
+const Opacity = require("../components/Opacity");
 
 class Signup extends React.Component {
   render() {
@@ -34,7 +34,6 @@ class Signup extends React.Component {
             </form>
           </div>
         </Opacity>
-        <Spacer/>
         <Footer/>
       </Layout>
     );

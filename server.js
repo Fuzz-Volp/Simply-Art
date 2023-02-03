@@ -16,6 +16,7 @@ const PORT = 3000;
  */
 const artController = require("./controllers/art/artController");
 const userController = require("./controllers/user/userController");
+const contactController = require("./controllers/contact/contactController")
 
 //connect to database
 const db = require("./db");
@@ -42,6 +43,7 @@ app.engine("jsx", require("jsx-view-engine").createEngine());
 
 app.use("/arts", artController);
 app.use("/user", userController);
+app.use("/contact", contactController);
 
 // We are just going to redirect to /arts if the user goes to our base route
 app.get("/", (req, res) => {

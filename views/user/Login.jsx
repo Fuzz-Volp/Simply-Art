@@ -1,10 +1,10 @@
 const React = require("react");
-const Button = require("../layout/Button");
+const Button = require("../components/Button");
 const Footer = require("../layout/Footer");
 const Layout = require("../layout/Layout");
 const Nav = require("../layout/Nav");
-const Opacity = require("../layout/Opacity");
-const Spacer = require("../layout/Spacer");
+const Opacity = require("../components/Opacity");
+const Spacer = require("../components/Spacer");
 
 class Login extends React.Component {
   render() {
