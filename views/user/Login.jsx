@@ -1,22 +1,21 @@
 const React = require("react");
 const Button = require("../components/Button");
 const Footer = require("../layout/Footer");
-const Layout = require("../layout/Layout");
+const LoginLayout = require("../layout/LoginLayout");
 const Nav = require("../layout/Nav");
 const Opacity = require("../components/Opacity");
-const Spacer = require("../components/Spacer");
 
 class Login extends React.Component {
   render() {
     return (
-      <Layout title="login">
+      <LoginLayout title="login">
         <Nav/>
         <div className="relative flex flex-col justify-content w-full">
           <Opacity>
             <img 
-              src="https://a.1stdibscdn.com/steve-mills--paintings-landscape-with-tree-huge-clouds-green-academic-realism-shadows-blue-for-sale/a_277/a_92477021638299104300/SM_211_new_master.jpg?disable=upscale&auto=webp&quality=60&width=1318" 
+              src="https://a.1stdibscdn.com/steve-mills--paintings-landscape-with-tree-huge-clouds-green-academic-realism-shadows-blue-for-sale/a_277/a_92477021638299104300/SM_211_new_master.jpg?disable=upscale&auto=webp&quality=60" 
               alt="background" 
-              className="z-0 w-full rounded h"
+              className="z-0 h-600 rounded"
               />
             </Opacity>
             <div className="flex flex-col content-center justify-center absolute w-full">
@@ -39,7 +38,7 @@ class Login extends React.Component {
             </div>
         </div>
         <Footer/>
-      </Layout>
+      </LoginLayout>
     );
   }
 }

@@ -9,7 +9,7 @@ class GalleryPost extends React.Component {
 
             <div className='bg-gray-100 rounded-md drop-shadow-md mx-12 my-12 '>               
                 <a href={`/arts/${_id}`} className="">
-                   <div className='flex flex-col items-center h-96 w-96'>
+                   <div className='flex flex-col items-center h-96 w-96 mt-4'>
                         <img src={image} alt={name}  className="rounded-md h-80 w-80"/>
                     
                         <p className='mt-2'>

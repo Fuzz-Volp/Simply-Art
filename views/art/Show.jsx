@@ -1,9 +1,9 @@
 const React = require("react");
 const Layout = require("../layout/Layout");
 const Nav = require("../layout/Nav");
-const Button = require("../layout/Button");
+const Button = require("../components/Button");
 const Footer = require("../layout/Footer");
-const Spacer = require("../layout/Spacer");
+const Spacer = require("../components/Spacer");
 
 
 class Show extends React.Component {

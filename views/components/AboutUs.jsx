@@ -21,7 +21,7 @@ class AboutUs extends React.Component {
                     </p>
                     <Button>  
                         <a href="/arts/about">
-                            Learn More!
+                            Meet Our Artists!
                         </a>
                     </Button>
                 </div>

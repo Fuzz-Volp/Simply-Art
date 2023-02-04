@@ -3,7 +3,7 @@ const Contact = require('../layout/Contact');
 const Layout = require('../layout/Layout');
 const Footer = require('../layout/Footer');
 const Nav = require('../layout/Nav');
-const Spacer = require('../layout/Spacer');
+const Spacer = require('../components/Spacer');
 
 class About extends React.Component {
     render() {
