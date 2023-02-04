@@ -104,35 +104,35 @@ Currently there is only one artist, but the idea is that as the website grows pe
 ## Issues
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
- ### 1.
+ ### 1. Multiple users
  I initially had some issues with my routes. My index route didn't seem to be working when I would attempt to launch the server from the link in VS Code. It would give me a 
  /20%20$ on end of the URL. I realized later that this was because I had a user signed in and it was reading the same user was attempting to login.
 
- ### 2. 
+ ### 2. Delete Location
  I didn't realize that my delete route needed to be on the show page and it wouldn't work properly for a while until I added it back. I thought it woul look cool on the edit page, but all it would do is initialize the edit route. 
 
- ### 3. 
+ ### 3. Contact
  I attempted to make a contact us and didn't finish. It's styled well enough, but the actual function of it is missing something, I'll need to do more research. 
 
- ### 4. 
+ ### 4. Index Carousel 
  I attempted to make a carousel on the index page but found that attempting to do that with a jsx file is harder than it looks as opposed to writing it in React. Instead I went for overflow-x-scroll and then attempted to make the scroll bar hidden until you hovered over it, but that required either Tailwind Elements or Flowbite. I decided not to mess around with either as the only examples that were given required full React and wouldn't work properly with a jsx template. I'm sure there is a way, I just need to do some more research.. or just learn React. 
 
 ## Roadmap
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
-### 1. 
+### 1. Protect content 
 Make it where multiple users can be signed in and can only update and delete the content they created. 
 
 ### 2. 
 Finish the about page 
 
-### 3. 
+### 3. Contact
 Make the Contact Us functional 
 
-### 4. 
+### 4. Add to Cart
 Create a functional cart that people can add art to to make a purchase. Set up and inventory or require people to ship out their own art. Maybe cover the shipping and handling for them. 
 
-### 5. 
+### 5. Services
 Add a "Services We Provide"
 ## Author
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
