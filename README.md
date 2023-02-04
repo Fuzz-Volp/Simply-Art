@@ -123,7 +123,7 @@ Currently there is only one artist, but the idea is that as the website grows pe
 ### 1. Protect content 
 Make it where multiple users can be signed in and can only update and delete the content they created. 
 
-### 2. 
+### 2. About
 Finish the about page 
 
 ### 3. Contact
@@ -134,6 +134,10 @@ Create a functional cart that people can add art to to make a purchase. Set up a
 
 ### 5. Services
 Add a "Services We Provide"
+
+### 6. Search Bar
+Add a search bar that will search for the name of art or description tags 
+
 ## Author
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
