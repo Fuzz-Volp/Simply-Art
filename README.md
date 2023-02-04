@@ -22,7 +22,7 @@ An art website where people can upload their art and sell it. Inspired by my wif
 - [Roadmap](#roadmap)
 - [Author](#Author)
 
-<div></div>
+<div height="20px"></div>
 
 ## About
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
