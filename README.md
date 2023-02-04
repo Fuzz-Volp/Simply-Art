@@ -42,7 +42,7 @@ Here is a list of technologies I used to complete this project.
 - **TailwindCSS**
 
 ### Route Table
-## Restful routes table
+#### Restful routes table
 | URL | HTTP VERB| Mongoose model function 
 |:--------:| -------------:| -------------:|
 | /arts/ | GET |.find
