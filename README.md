@@ -7,6 +7,7 @@ An art website where people can upload their art and sell it. Inspired by my wif
 - [About](#about)
     - [Description](#description)
     - [Technologies](#technologies)
+    - [Route Table](#route_table)
 
 - [Install](#install)
     -[Prerequisits](#prerequisits)
@@ -44,6 +45,18 @@ Here is a list of technologies I used to complete this project.
 - **JSX** 
 - **JavaScript**
 - **TailwindCSS**
+
+### Route Table
+## Restful routes table
+| URL | HTTP VERB| Mongoose model function 
+|:--------:| -------------:| -------------:|
+| /arts/ | GET |.find
+| /art/new | GET |N/A
+| /art | POST |.create
+| /art/:id | GET |.findById
+| /art/:id/edit | GET |.findById
+| /art/:id | PUT |.findByIdAndUpdate
+| /art/:id | DELETE |.findByIdAndDelete
 ## Install
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
