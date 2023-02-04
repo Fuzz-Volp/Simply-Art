@@ -51,12 +51,12 @@ Here is a list of technologies I used to complete this project.
 | URL | HTTP VERB| Mongoose model function 
 |:--------:| -------------:| -------------:|
 | /arts/ | GET |.find
-| /art/new | GET |N/A
-| /art | POST |.create
-| /art/:id | GET |.findById
-| /art/:id/edit | GET |.findById
-| /art/:id | PUT |.findByIdAndUpdate
-| /art/:id | DELETE |.findByIdAndDelete
+| /arts/new | GET |N/A
+| /arts | POST |.create
+| /arts/:id | GET |.findById
+| /arts/:id/edit | GET |.findById
+| /arts/:id | PUT |.findByIdAndUpdate
+| /arts/:id | DELETE |.findByIdAndDelete
 ## Install
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
