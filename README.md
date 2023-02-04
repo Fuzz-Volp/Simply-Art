@@ -56,32 +56,43 @@ to edit and get started you'll need to install these packages
 
 **npm i bcryptjs connect-mongo dotenv express express-session jxs-view-engine method-override mongoose morgan nodemailer react react-dom**
 
-"bcryptjs": "^2.4.3",
-"connect-mongo": "^4.6.0",
-"dotenv": "^16.0.3",
-"express": "^4.18.2"
-"express-session": "^1.17.3",
-"jsx-view-engine": "^0.1.0",
-"method-override": "^3.0.0",
-"mongoose": "^6.8.4",
-"morgan": "^1.10.0",
-"nodemailer": "^6.9.1",
-"react": "^16.14.0",
-"react-dom": "^16.14.0"
 ## Visuals
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
 ### Index
+#### Initial View (Welcome)
+![Getting Started](./images/index.png)
 
+#### Examples of Art
+![Getting Started](./images/index1.png)
+
+#### Fancy Quote
+![Getting Started](./images/index2.png)
+
+#### Contact Us
+![Getting Started](./images/index3.png)
 ### New
-
+![Getting Started](./images/post_page.png)
+![Getting Started](./images/post2_page.png)
 ### Show
 
+#### Showing Whatever Artwork You Clicked On. 
+Here you have the ability to update, delete and (soon) add to cart. 
+
+![Getting Started](./images/show_page.png)
 ### Edit
 
+#### This is the Edit page
+![Getting Started](./images/edit_page.png)
 ### About
+
+#### Learn about the Artist 
+Currently there is only one artist, but the idea is that as the website grows people would join and sell their art here. 
+![Getting Started](./images/about_page.png)
 ### Gallery
 
+#### A full list of all available art
+![Getting Started](./images/gallery_page.png)
 ## Issues
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
@@ -96,7 +107,7 @@ to edit and get started you'll need to install these packages
  I attempted to make a contact us and didn't finish. It's styled well enough, but the actual function of it is missing something, I'll need to do more research. 
 
  ### 4. 
- I attempted to make a carousel on the index page but found that attempting to do that with a jsx file is harder than it looks as opposed to writing it in React. 
+ I attempted to make a carousel on the index page but found that attempting to do that with a jsx file is harder than it looks as opposed to writing it in React. Instead I went for overflow-x-scroll and then attempted to make the scroll bar hidden until you hovered over it, but that required either Tailwind Elements or Flowbite. I decided not to mess around with either as the only examples that were given required full React and wouldn't work properly with a jsx template. I'm sure there is a way, I just need to do some more research.. or just learn React. 
 
 ## Roadmap
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
