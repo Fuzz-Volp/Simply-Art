@@ -8,23 +8,18 @@ An art website where people can upload their art and sell it. Inspired by my wif
     - [Description](#description)
     - [Technologies](#technologies)
     - [Route Table](#route_table)
-
 - [Install](#install)
-    -[Prerequisits](#prerequisits)
-    -[Packages](#packages)
-
+    - [Prerequisites](#prerequisits)
+    - [Packages](#packages)
 - [Visuals](#visuals)
-    -[Index](#index)
-    -[New](#new)
-    -[Show](#show)
-    -[Edit](#edit)
-    -[About](#about)
-    -[Gallery](#gallery)
-
+    - [Index](#index)
+    - [New](#new)
+    - [Show](#show)
+    - [Edit](#edit)
+    - [About](#about)
+    - [Gallery](#gallery)
 - [Issues](#issues)
-
 - [Roadmap](#roadmap)
-
 - [Author](#Author)
 
 
@@ -60,7 +55,7 @@ Here is a list of technologies I used to complete this project.
 ## Install
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
-### Prerequisits
+### Prerequisites
 - have Node version 16.18.0 or higher installed 
 ### Packages
 to edit and get started you'll need to install these packages
@@ -145,4 +140,4 @@ Add a "Services We Provide"
 ### Fuzzy Volpitta
 ### https://github.com/Fuzz-Volp
 
-#### Thank you for taking a look at my Unit-02 projext Simply Art! If you have any suggestions as to what I should do to improve it please reach out. 
+#### Thank you for taking a look at my Unit-02 project Simply Art! If you have any suggestions as to what I should do to improve it please reach out. 
