@@ -30,29 +30,95 @@ An art website where people can upload their art and sell it. Inspired by my wif
 ## About
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
+**Link to Webpage**
+https://simply-art.herokuapp.com/arts
+
+
 ### Description
 This is my Unit 2 project for GA. My goal was to make an **Express CRUD** application that would incorporate a user who could add **art** to a webpage that eventually would be sold. The idea is that this webpage would be targeted towards up-and-coming artist looking to showcase and sell their art! 
 ### Technologies
 Here is a list of technologies I used to complete this project. 
-- Express.js
-- Node.js
-- MongoDB
-- JSX 
-- JavaScript
-- TailwindCSS
+- **Express.js**
+- **Node.js**
+- **MongoDB**
+- **JSX** 
+- **JavaScript**
+- **TailwindCSS**
 ## Install
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
 ### Prerequisits
-- have Node 
+- have Node version 16.18.0 or higher installed 
 ### Packages
+to edit and get started you'll need to install these packages
+
+**npm -y init**
+
+**npm i bcryptjs connect-mongo dotenv express express-session jxs-view-engine method-override mongoose morgan nodemailer react react-dom**
+
+"bcryptjs": "^2.4.3",
+"connect-mongo": "^4.6.0",
+"dotenv": "^16.0.3",
+"express": "^4.18.2"
+"express-session": "^1.17.3",
+"jsx-view-engine": "^0.1.0",
+"method-override": "^3.0.0",
+"mongoose": "^6.8.4",
+"morgan": "^1.10.0",
+"nodemailer": "^6.9.1",
+"react": "^16.14.0",
+"react-dom": "^16.14.0"
 ## Visuals
+<p align="right"> (<a href="#readme-top">back to top</a>) </p>
+
 ### Index
+
 ### New
+
 ### Show
+
 ### Edit
+
 ### About
 ### Gallery
 
+## Issues
+<p align="right"> (<a href="#readme-top">back to top</a>) </p>
+
+ ### 1.
+ I initially had some issues with my routes. My index route didn't seem to be working when I would attempt to launch the server from the link in VS Code. It would give me a 
+ /20%20$ on end of the URL. I realized later that this was because I had a user signed in and it was reading the same user was attempting to login.
+
+ ### 2. 
+ I didn't realize that my delete route needed to be on the show page and it wouldn't work properly for a while until I added it back. I thought it woul look cool on the edit page, but all it would do is initialize the edit route. 
+
+ ### 3. 
+ I attempted to make a contact us and didn't finish. It's styled well enough, but the actual function of it is missing something, I'll need to do more research. 
+
+ ### 4. 
+ I attempted to make a carousel on the index page but found that attempting to do that with a jsx file is harder than it looks as opposed to writing it in React. 
+
 ## Roadmap
+<p align="right"> (<a href="#readme-top">back to top</a>) </p>
+
+### 1. 
+Make it where multiple users can be signed in and can only update and delete the content they created. 
+
+### 2. 
+Finish the about page 
+
+### 3. 
+Make the Contact Us functional 
+
+### 4. 
+Create a functional cart that people can add art to to make a purchase. Set up and inventory or require people to ship out their own art. Maybe cover the shipping and handling for them. 
+
+### 5. 
+Add a "Services We Provide"
 ## Author
+<p align="right"> (<a href="#readme-top">back to top</a>) </p>
+
+### Fuzzy Volpitta
+### https://github.com/Fuzz-Volp
+
+#### Thank you for taking a look at my Unit-02 projext Simply Art! If you have any suggestions as to what I should do to improve it please reach out. 
