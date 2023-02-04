@@ -23,6 +23,7 @@ An art website where people can upload their art and sell it. Inspired by my wif
 - [Author](#Author)
 
 <div></div>
+
 ## About
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
@@ -106,6 +107,7 @@ Currently there is only one artist, but the idea is that as the website grows pe
 ![Getting Started](./images/gallery_page.png)
 
 <div></div>
+
 ## Issues
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
@@ -123,6 +125,7 @@ Currently there is only one artist, but the idea is that as the website grows pe
  I attempted to make a carousel on the index page but found that attempting to do that with a jsx file is harder than it looks as opposed to writing it in React. Instead I went for overflow-x-scroll and then attempted to make the scroll bar hidden until you hovered over it, but that required either Tailwind Elements or Flowbite. I decided not to mess around with either as the only examples that were given required full React and wouldn't work properly with a jsx template. I'm sure there is a way, I just need to do some more research.. or just learn React. 
 
 <div></div>
+
 ## Roadmap
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
@@ -145,6 +148,7 @@ Add a "Services We Provide"
 Add a search bar that will search for the name of art or description tags 
 
 <div></div>
+
 ## Author
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
