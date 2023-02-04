@@ -22,7 +22,7 @@ An art website where people can upload their art and sell it. Inspired by my wif
 - [Roadmap](#roadmap)
 - [Author](#Author)
 
-<div height="20px"></div>
+<br/>
 
 ## About
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
@@ -53,7 +53,7 @@ Here is a list of technologies I used to complete this project.
 | /arts/:id/edit | GET |.findById
 | /arts/:id | PUT |.findByIdAndUpdate
 | /arts/:id | DELETE |.findByIdAndDelete
-<div></div>
+<br/>
 
 ## Install
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
@@ -67,7 +67,8 @@ to edit and get started you'll need to install these packages
 
 **npm i bcryptjs connect-mongo dotenv express express-session jxs-view-engine method-override mongoose morgan nodemailer react react-dom**
 
-<div></div>
+<br/>
+
 ## Visuals
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
 
@@ -106,7 +107,7 @@ Currently there is only one artist, but the idea is that as the website grows pe
 #### A full list of all available art
 ![Getting Started](./images/gallery_page.png)
 
-<div></div>
+<br/>
 
 ## Issues
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
@@ -124,7 +125,7 @@ Currently there is only one artist, but the idea is that as the website grows pe
  ### 4. Index Carousel 
  I attempted to make a carousel on the index page but found that attempting to do that with a jsx file is harder than it looks as opposed to writing it in React. Instead I went for overflow-x-scroll and then attempted to make the scroll bar hidden until you hovered over it, but that required either Tailwind Elements or Flowbite. I decided not to mess around with either as the only examples that were given required full React and wouldn't work properly with a jsx template. I'm sure there is a way, I just need to do some more research.. or just learn React. 
 
-<div></div>
+<br/>
 
 ## Roadmap
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
@@ -147,7 +148,7 @@ Add a "Services We Provide"
 ### 6. Search Bar
 Add a search bar that will search for the name of art or description tags 
 
-<div></div>
+<br/>
 
 ## Author
 <p align="right"> (<a href="#readme-top">back to top</a>) </p>
