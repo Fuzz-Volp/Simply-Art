@@ -101,7 +101,7 @@ Here you have the ability to update, delete and (soon) add to cart.
 
 #### Learn about the Artist 
 Currently there is only one artist, but the idea is that as the website grows people would join and sell their art here. 
-![Getting Started](./images/about_page.png)
+![Getting Started](./images/)
 ### Gallery
 
 #### A full list of all available art
